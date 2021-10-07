@@ -1,22 +1,19 @@
 
-
 // new CountdownTimer({
 //     selector: '#timer-1',
 //     targetDate: new Date('Jul 17, 2019'),
 //   });
-
-const targetDate = new Date("Oct 11, 2021").getTime();
 
   const tDays = document.querySelector('[data-value="days"]');
   const tHours = document.querySelector('[data-value="hours"]');
   const tMinutes = document.querySelector('[data-value="mins"]');
   const tSeconds = document.querySelector('[data-value="secs"]');
 
+const targetDate = new Date("Oct 11, 2021");
+
 
 const intervalId = setInterval(()=>{
-    const currentDate = new Date().getTime();
-    const time = targetDate - currentDate;
-
+    const time = targetDate - Date.now();
 if (time < 0) {
     clearInterval(intervalId);
 }
@@ -31,4 +28,6 @@ tMinutes.textContent = mins;
 tSeconds.textContent = secs;
   }, 1000);
 
-  
+// pad(value) {
+//     return String(value).padStart(2, '0')
+// }
