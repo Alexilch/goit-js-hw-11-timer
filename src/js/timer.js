@@ -1,11 +1,13 @@
 class CountdownTimer {
   constructor({targetDate, selector, countDown}) {
     this.targetDate = targetDate,
-    this.countDown = countDown,
+    this.countDown = updateTimer,
     this.intervalId = null,
     this.timeR(),
     this._refs = this.refS(selector)
+    
   };
+  
 
   refS(selector) {
       const refs = {};
@@ -51,8 +53,6 @@ function updateTimer({ days, hours, mins, secs }) {
 const timer = new CountdownTimer({
   selector: '#timer-1',
   targetDate: new Date('Oct 11, 2021'),
-
-  countDown: updateTimer,
 });
 
 
