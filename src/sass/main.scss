@@ -5,3 +5,19 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
+
+.timer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-size:xx-large;
+    font-weight: 700;
+}
+.field{
+    margin: 15px;
+}
+.timer_name{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
