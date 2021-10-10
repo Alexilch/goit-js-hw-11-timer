@@ -52,7 +52,7 @@ function updateTimer({ days, hours, mins, secs }) {
 
 const timer = new CountdownTimer({
   selector: '#timer-1',
-  targetDate: new Date('Oct 11, 2021'),
+  targetDate: new Date('Oct 13, 2021'),
 });
 
 
